@@ -13,7 +13,6 @@ function train(trainingSet) {
 
 	for(record of trainingSet) {
 
-		// one extra feature for bias
 		var prediction = predictBasedOnWeights(record.features, weights);
 
 		for(featureIndex in record.features) {
